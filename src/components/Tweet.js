@@ -5,7 +5,6 @@ import Timestamp from "./Timestamp";
 import User from "./User";
 
 function Tweet({ tweet, tweet: { user } }) {
-	console.log(user);
 	return (
 		<div className='tweet'>
 
