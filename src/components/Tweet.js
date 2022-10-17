@@ -1,3 +1,4 @@
+import Actions from "./Action";
 import Message from "./Message";
 import ProfileImage from "./ProfileImage";
 import Timestamp from "./Timestamp";
@@ -19,14 +20,8 @@ function Tweet({ tweet, tweet: { user } }) {
 
 				<Message message= {tweet.message} />
 
-
-				<div className='actions'>
-					{/* Font Awesome icons */}
-					<i className='far fa-comment'></i>
-					<i className='fas fa-retweet'></i>
-					<i className='far fa-heart'></i>
-					<i className='fas fa-share'></i>
-				</div>
+				<Actions />
+				
 			</div>
 
 			<i className='fas fa-ellipsis-h'></i>
